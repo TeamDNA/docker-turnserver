@@ -31,4 +31,4 @@ then
     touch /tmp/turnserver.configured
 fi
 
-exec /usr/bin/turnserver -f --no-cli >>/var/log/turnserver.log 2>&1
+exec turnserver -f --no-cli >>/var/log/turnserver.log 2>&1
