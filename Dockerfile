@@ -13,6 +13,7 @@ RUN apt-get install -y coturn
 RUN mkdir /etc/service/turnserver
 ADD turnserver.sh /etc/service/turnserver/run
 
+RUN mkdir /userdb
 RUN turnadmin -b /userdb/turndb -a -u demo -p demo -r main
 
 # Clean up APT when done.
